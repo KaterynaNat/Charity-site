@@ -1,17 +1,18 @@
 import React from 'react';
+import styles from './Header.module.css';
 
 const Header: React.FC = () => {
   return (
-    <header className="p-4 bg-blue-600 text-white flex justify-between items-center">
-      <div className="logo text-lg font-bold">Логотип</div>
-      <nav className="flex space-x-4">
-        <a href="#about" className="hover:underline">Про нас</a>
-        <a href="#services" className="hover:underline">Послуги</a>
-        <a href="#team" className="hover:underline">Наша команда</a>
-        <a href="#donors" className="hover:underline">Донори</a>
-        <a href="#news" className="hover:underline">Новини</a>
-        <a href="#media" className="hover:underline">Медіа</a>
-        <a href="#footer" className="hover:underline">Контакти</a>
+    <header className={styles.header}>
+      <div className={styles.logo}>Логотип</div>
+      <nav className={styles.nav}>
+        <a href="#about" className={styles.link}>Про нас</a>
+        <a href="#services" className={styles.link}>Послуги</a>
+        <a href="#team" className={styles.link}>Наша команда</a>
+        <a href="#donors" className={styles.link}>Донори</a>
+        <a href="#news" className={styles.link}>Новини</a>
+        <a href="#media" className={styles.link}>Медіа</a>
+        <a href="#footer" className={styles.link}>Контакти</a>
       </nav>
     </header>
   );
